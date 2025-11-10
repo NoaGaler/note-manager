@@ -1,0 +1,113 @@
+.keyboard-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 45%;
+  position: fixed;
+  left: 45px;
+  bottom: 350px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  padding: 5px 5px;
+  background: linear-gradient(145deg, #f7f9f9, #e2e6e6);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  transition: red 0.3s ease;
+}
+
+.keyboard-toolbar:hover {
+  background: linear-gradient(145deg, #eef2f2, #d9dedf);
+}
+
+
+.keyboard-toolbar button {
+  padding: 14px 18px;
+  min-width: 100px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #b8d8d4, #e0e0e0);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15),
+    -2px -2px 5px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.keyboard-toolbar button:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2),
+    -2px -2px 8px rgba(255, 255, 255, 0.8);
+  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+}
+
+.keyboard-toolbar button:active {
+  transform: translateY(1px);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.keyboard-toolbar select {
+  padding: 14px 18px;
+  min-width: 100px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #b8d8d4, #e0e0e0);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15),
+    -2px -2px 5px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.keyboard-toolbar select:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2),
+    -2px -2px 8px rgba(255, 255, 255, 0.8);
+  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+}
+
+.keyboard-toolbar input[type="text"],
+.keyboard-toolbar input[type="range"],
+.keyboard-toolbar input[type="color"] {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  direction: rtl;
+  min-width: 80px;
+}
+
+.keyboard-toolbar input[type="text"]:focus,
+.keyboard-toolbar input[type="range"]:focus,
+.keyboard-toolbar input[type="color"]:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(60, 61, 62, 0.3);
+}
+
+.delete-text {
+  background: linear-gradient(145deg, #f7f9f9, #e2e6e6);
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .keyboard-toolbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .keyboard-toolbar button,
+  .keyboard-toolbar select,
+  .keyboard-toolbar input {
+    min-width: 90%;
+  }
+}
